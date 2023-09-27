@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Magic Math</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Mason's Magic Math</h1>
+	</header>
+
+	<!--Holds information like current goal, new game button, and win/loss count-->
+	<div id="info">
+		<p class="right">Goal: <span id="goal"></span></p>
+		<button id="new-game-btn" class="middle">New Game</button>
+		<p class="left">Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></p>
+	</div>
+
+	<!--Holds status messages like what to click and win/loss messages-->
+	<div id="status">
+		<p id="status-msg"></p>
+	</div>
+
+	<!--Main place user interats with. Contains number board, operators, and work area-->
+    <div id="game-area">
+		<section id="gameboard">
+			<h2>Gameboard</h2>
+			<table>
+				<tr>
+					<td><button class="number-btn"></button></td>
+					<td><button class="number-btn"></button></td>
+				</tr>
+				<tr>
+					<td><button class="number-btn"></button></td>
+					<td><button class="number-btn"></button></td>
+				</tr>
+			</table>
+		</section>
+
+		<section id="operators">
+			<h2>Operators</h2>
+			<button class="operator-btn" id="add-btn">+</button>
+			<button class="operator-btn" id="subtract-btn">-</button>
+			<button class="operator-btn" id="multiply-btn">*</button>
+		</section>
+
+		<section id="work-area">
+			<h2>Work Area</h2>
+		</section>
+	</div>
+
+	<!--Holds optional solution steps if checkbox is enablde-->
+	<div id="cheat">
+		<input type="checkbox" id="cheat-box" name="cheat-box"><label for="cheat-box">Check this box and click <strong>new game</strong> to view how to solve problems with their original numbers.</label>
+	</div>
+
+	<footer>
+		<p>Mason Rosenau - May 2023</p>
+	</footer>
+</body>
+</html>

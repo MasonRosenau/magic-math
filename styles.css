@@ -1,0 +1,131 @@
+/*main elements like header*/
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #1293ea;
+	border: 10px solid #085f99;
+	color: #ec6600;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*orange section with game info*/
+#info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #ec6600;
+	border-left: 10px solid #085f99;
+	border-right: 10px solid #085f99;
+	border-bottom: 10px solid #085f99;
+}
+.left, .right {
+	width: 33%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+.middle { /*new game button*/
+	width: 33%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	width: 300px;
+	margin-top: 13px;
+}
+
+/*for victory/defeat and instructions*/
+#status-msg {
+	font-size: 24px;
+	text-align: center;
+}
+
+/*area where user plays game*/
+#game-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 32px;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+/*2x2 table of buttons*/
+#gameboard {
+	width: 33%;
+	text-align: center;
+}
+table {
+	margin: auto;
+	text-align: center;
+}
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+/*operator and equations area*/
+#operators, #work-area {
+	width: 33%;
+	text-align: center;
+}
+#work-area p {
+	font-size: 24px;
+}
+
+/*more button styling & classes for click functionality*/
+button {
+	background-color: #1293ea;
+	border: 3px solid #054d7c;
+	color: #fff;
+	font-size: 24px;
+	border-radius: 5px;
+	margin: 5px;
+	cursor: pointer;
+	width: 90px;
+	height: 50px;
+}
+button:not(.clicked):hover {
+    background-color: #1481c9;
+}
+.clicked {
+	background-color: #0c70b3;
+}
+
+/*optional section to show solutions*/
+#cheat {
+	align-items: center;
+	margin: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+#cheat-box {
+	width: 22px;
+	height: 22px;
+	vertical-align: text-bottom;
+}
+
+footer {
+	background-color: #1293ea;
+	border: 5px solid #085f99;
+	font-family: sans-serif;
+	color: white;
+	padding: 10px;
+}
+footer p {
+	font-size: 16px;
+	font-family: sans-serif;
+	margin: 3px;
+	text-align: center;
+}
